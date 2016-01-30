@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>F2C4E70F-FE75-446D-9CD4-D9A99D9583F7</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Task1</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>7B7115314A8CF86A54E332756D7FAF20026F8E8F</key>
+		<string>https://github.com/madlax19/lesson11.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Task1/Task1.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>7B7115314A8CF86A54E332756D7FAF20026F8E8F</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/madlax19/lesson11.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>7B7115314A8CF86A54E332756D7FAF20026F8E8F</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>7B7115314A8CF86A54E332756D7FAF20026F8E8F</string>
+			<key>IDESourceControlWCCName</key>
+			<string>lesson11</string>
+		</dict>
+	</array>
+</dict>
+</plist>
