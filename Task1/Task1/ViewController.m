@@ -15,6 +15,7 @@
 @property (nonatomic, strong) NSDecimalNumber *previous;
 @property (nonatomic, strong) NSDecimalNumber *number;
 @property (nonatomic) NSInteger index;
+@property (nonatomic) NSInteger count;
 
 @end
 
@@ -26,6 +27,7 @@
     self.previous = [[NSDecimalNumber alloc] initWithInteger:0];
     self.number = [[NSDecimalNumber alloc] initWithInteger:1];
     self.index = 2;
+    self.count = 0;
 }
 
 -(void)viewDidAppear:(BOOL)animated{
@@ -35,22 +37,22 @@
 
 - (void) calcFibonacci {
     dispatch_async(dispatch_get_global_queue( DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^(void) {
-        while (self.numbersData.count < magic_number) {
+        while (self.count < magic_number) {
             NSDecimalNumber *new = [self.number decimalNumberByAdding:self.previous];
             self.previous = self.number;
             self.number = new;
             self.index++;
             if (self.index == 10) {
                 self.index = 0;
-                [self.numbersData addObject:new];
-                NSInteger row = self.numbersData.count - 1;
+                self.count++;
                 dispatch_async(dispatch_get_main_queue(), ^(void){
                     [self.tableView beginUpdates];
+                    [self.numbersData addObject:new];
+                    NSInteger row = self.numbersData.count - 1;
                     [self.tableView insertRowsAtIndexPaths:@[[NSIndexPath indexPathForRow:row inSection:0]] withRowAnimation:UITableViewRowAnimationNone];
                     [self.tableView endUpdates];
                     
                 });
-                [NSThread sleepForTimeInterval:0.1f];
             }
         }
     });
